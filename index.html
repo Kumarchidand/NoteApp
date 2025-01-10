@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        padding-bottom: 40px;
+        background-color: #badc58;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .note {
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        margin: 10px;
+        margin-top: 56px;
+      }
+      .tool {
+        width: 100%;
+        background-color: #535c68;
+        padding: 5px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .tool i {
+        padding: 5px;
+      }
+      .note textarea {
+        border: none;
+        width: 100%;
+        height: 100%;
+        resize: none;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .note textarea:focus {
+        outline: none;
+      }
+      #addBtn {
+  position: fixed;
+  /* it always stays in the same place even if the page is scrolled, it is positioned relative to the viewport */
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  background-color: #535c68;
+  color: white;
+}
+#addBtn:hover{
+background-color: gray;
+}
+      #addBtn i {
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <button id="addBtn">
+      <i class="fa-solid fa-plus"></i>
+      Add Note
+    </button>
+    <div class="container" id="container">
+    
+      </div>
+    </div>
+    <script src="./script.js">
+
+    </script>
+ 
+  </body>
+</html>
